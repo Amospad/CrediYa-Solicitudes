@@ -1,0 +1,12 @@
+dependencies {
+    implementation project(':model')
+    implementation project(':usecase')
+    implementation project(':api-rest')
+    implementation project(':jpa-repository')
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testCompileOnly 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
+}
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+springBoot { mainClass = 'co.com.crediya.solicitudes.MainApplication' }

@@ -1,0 +1,17 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+rootProject.name = 'Solicitudes'
+include ':app-service'
+findProject(':app-service')?.projectDir = file('./applications/app-service')
+include ':model'
+findProject(':model')?.projectDir = file('./domain/model')
+include ':usecase'
+findProject(':usecase')?.projectDir = file('./domain/usecase')
+include ':api-rest'
+findProject(':api-rest')?.projectDir = file('./infrastructure/entry-points/api-rest')
+include ':jpa-repository'
+findProject(':jpa-repository')?.projectDir = file('./infrastructure/driven-adapters/jpa-repository')

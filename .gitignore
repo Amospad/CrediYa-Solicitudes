@@ -1,0 +1,15 @@
+# Gradle
+.gradle/
+build/
+build-cache/
+!gradle/wrapper/gradle-wrapper.jar
+
+# VS Code / IntelliJ
+.vscode/
+.idea/
+*.iml
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+*.log
