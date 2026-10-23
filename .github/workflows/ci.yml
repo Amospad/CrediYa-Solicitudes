@@ -20,5 +20,8 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
+    - name: Dar permisos de ejecución a Gradle
+      run: chmod +x gradlew
+
     - name: Compilar y correr Tests
       run: ./gradlew clean build test
